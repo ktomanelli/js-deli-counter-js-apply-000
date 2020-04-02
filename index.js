@@ -1,6 +1,6 @@
-function takeANumber(currentLine,name){
-  currentLine.push(name);
-  return `Welcome, ${name}. You are number ${currentLine.length} in line.`;
+function takeANumber(){
+  let num=0;
+  return `Order Number: ${num+1}`
 }
 function nowServing(currentLine){
   if(currentLine.length===0){
@@ -23,11 +23,11 @@ function currentLine(line){
   else{
     str+=':';
     for(let i=0;i<line.length;i+=1){
-      str+=` ${i+1}. ${line[i]}`;
-      if(i!==line.length-1){
-        str+=',';
-      }
+      str+=` ${i+1}. ${line[i]},`;
+      // if(i!==line.length-1){
+      //   str+=',';
+      // }
     }
-    return str;
+    return str.substring(0,str.length-1);
   }
 }
