@@ -4,7 +4,9 @@ function takeANumber(){
   return `Order Number: ${num++}`
 }
 
-
+console.log(takeANumber());
+console.log(takeANumber());
+console.log(takeANumber());
 
 
 function nowServing(currentLine){
