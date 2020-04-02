@@ -1,8 +1,9 @@
-  let num=0;
+let num=0;
 
 function takeANumber(){
   return `Order Number: ${num++}`
 }
+
 
 
 
