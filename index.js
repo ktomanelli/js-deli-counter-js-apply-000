@@ -1,8 +1,9 @@
-function takeANumber(){
   let num=0;
+
+function takeANumber(){
   return `Order Number: ${num++}`
 }
-console.log()
+
 
 
 function nowServing(currentLine){
