@@ -1,7 +1,10 @@
 function takeANumber(){
   let num=0;
-  return `Order Number: ${num+1}`
+  return `Order Number: ${num++}`
 }
+console.log()
+
+
 function nowServing(currentLine){
   if(currentLine.length===0){
     return 'There is nobody waiting to be served!';
